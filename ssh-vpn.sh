@@ -233,7 +233,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -q -O add-host "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/add-host.sh"
 wget -q -O about "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/about.sh"
-wget -q -O menu "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/menu"
+wget -q -O menu "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/menu.sh"
 wget -q -O usernew "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/usernew.sh"
 wget -q -O trial "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/trial.sh"
 wget -q -O hapus "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/hapus.sh"
