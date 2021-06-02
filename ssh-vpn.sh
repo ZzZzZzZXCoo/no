@@ -181,8 +181,32 @@ apt -y install tmux
 apt -y install ruby
 gem install lolcat
 apt -y install figlet
-wget -q -O /usr/local/bin/edu https://raw.githubusercontent.com/nama/no/main/proxy-template.py
-chmod +x /usr/local/bin/edu
+wget -q -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/nama/no/main/proxy-template.py
+chmod +x /usr/local/bin/edu-proxy
+
+# Installing Service
+cat > /etc/systemd/system/edu-proxy.service << END
+[Unit]
+Description=Python Edu Proxy By Horasss Service
+Documentation=https://vpnstores.net
+After=network.target nss-lookup.target
+
+[Service]
+Type=simple
+User=root
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
+ExecStart=/usr/bin/python -O /usr/local/bin/edu-proxy 2082
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+END
+
+systemctl daemon-reload
+systemctl enable edu-proxy
+systemctl restart edu-proxy
 
 #OpenVPN
 wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
