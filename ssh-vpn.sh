@@ -12,10 +12,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.vpnstores.net
-organizationalunit=www.vpnstores.net
-commonname=www.vpnstores.net
-email=admin@vpnstores.net
+organization=javsex.tech
+organizationalunit=javsex.tech
+commonname=PT.KewekSKUY
+email=admin@javsex.tech
 
 # simple password minimal
 wget -q -O /etc/pam.d/common-password "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/password"
@@ -174,6 +174,15 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 # konfigurasi stunnel
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
+
+#sshws
+apt -y install python
+apt -y install tmux
+apt -y install ruby
+gem install lolcat
+apt -y install figlet
+wget -q -O /usr/local/bin/edu https://raw.githubusercontent.com/nama/no/main/proxy-template.py
+chmod +x /usr/local/bin/edu
 
 #OpenVPN
 wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
