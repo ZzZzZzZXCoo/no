@@ -8,7 +8,7 @@ white="\e[1;37m"
 clear
 echo -e ""
 echo -e "$red════════════════════════════════════════════════════"
-echo -e "$yelow═════════$white[Script Premium by javsexy.school]$yelow═════════"
+echo -e "$yelow═════════$white[Script Premium by JavSEXY.school]$yelow═════════"
 echo -e "$gren════════════$white[https://t.me/DariTZYJadiEZY]$gren═══════════"
 echo -e "$blue════════════════════════════════════════════════════"
 echo -e ""
