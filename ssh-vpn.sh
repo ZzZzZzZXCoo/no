@@ -187,8 +187,8 @@ chmod +x /usr/local/bin/edu-proxy
 # Installing Service
 cat > /etc/systemd/system/edu-proxy.service << END
 [Unit]
-Description=Python Edu Proxy By Horasss Service
-Documentation=https://vpnstores.net
+Description=Autoscript by JavSEXY
+Documentation=https://xnxx.com
 After=network.target nss-lookup.target
 
 [Service]
