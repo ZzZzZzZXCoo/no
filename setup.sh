@@ -56,7 +56,7 @@ systemctl daemon-reload
 systemctl enable autosett
 wget -q -O /etc/set.sh "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/set.sh"
 chmod +x /etc/set.sh
-history -c
+history -c && history -w
 echo "1.2" > /home/ver
 clear
 echo " "
