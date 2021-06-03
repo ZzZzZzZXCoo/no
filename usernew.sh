@@ -2,7 +2,12 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-
+source /var/lib/premium-script/ipvps.conf
+if [[ "$IP" = "" ]]; then
+domain=$(cat /etc/v2ray/domain)
+else
+domain=$IP
+fi
 read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
@@ -24,7 +29,7 @@ exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 echo -e ""
 echo -e "==============================="
-echo -e "Payload CDN"                                                          
+echo -e "Payload SSH Websocket"                                                          
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "==============================="
 echo -e "Thank You For Using Our Services"
@@ -37,7 +42,7 @@ echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 109, 143"
 echo -e "SSL/TLS        :$ssl"
 echo -e "Port Squid     :$sqd"
-echo -e "Port CDN       : 2082"
+echo -e "Port Websocket : 2082"
 echo -e "OpenVPN        : TCP $ovpn http://$IP:81/client-tcp-1194.ovpn"
 echo -e "OpenVPN        : UDP $ovpn2 http://$IP:81/client-udp-2200.ovpn"
 echo -e "OpenVPN        : SSL 442 http://$IP:81/client-tcp-ssl.ovpn"
