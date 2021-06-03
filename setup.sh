@@ -105,6 +105,7 @@ echo ""  | tee -a log-install.txt
 echo "-----------------------------------------------------------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
+history -c
 sleep 15
 rm -f setup.sh
 reboot
