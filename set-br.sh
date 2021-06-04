@@ -19,9 +19,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user bokirokega701@gmail.com
-from bokirokega702@gmail.com
-Pasukansiapgrak22
+user nobackup
+from nobackup
+nobackup
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
