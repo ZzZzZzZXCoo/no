@@ -94,7 +94,7 @@ echo -e "$red  55.  $white Reboot VPS"
 echo -e "$red  56.  $white Speedtest VPS"
 echo -e "$red  57.  $white Information Display System"
 echo -e "$red  58.  $white Info Script Auto Install"
-echo -e "$red  59.  $white Install SSH Websocket"
+echo -e "$red  59.  $white Start SSH Websocket"
 echo -e "$red═══════════════════════════════════════════"
 echo -e "$red   0.  $white Exit From Putty / JuiceSSH / Termux"
 echo -e "$gren═══════════════════════════════════════════"
@@ -277,7 +277,7 @@ info
 about
 ;;
 59)
-edu
+systemctl start edu-proxy
 ;;
 x)
 exit
