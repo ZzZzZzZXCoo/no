@@ -294,6 +294,7 @@ wget -q -O port-vless "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/por
 wget -q -O wbmn "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/webmin.sh"
 wget -q -O xp "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/xp.sh"
 wget -q -O kernel-updt "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/kernel-update.sh"
+wget -q -O update "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/update.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
@@ -324,6 +325,7 @@ chmod +x port-vless
 chmod +x wbmn
 chmod +x xp
 chmod +x kernel-updt
+chmod +x update
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
