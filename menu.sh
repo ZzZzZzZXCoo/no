@@ -95,7 +95,7 @@ echo -e "$red  56.  $white Speedtest VPS"
 echo -e "$red  57.  $white Information Display System"
 echo -e "$red  58.  $white Info Script Auto Install"
 echo -e "$red  59.  $white Start SSH Websocket"
-echo -e "$red  60.  $white Update Script
+echo -e "$red  60.  $white Update Menu Terbaru
 echo -e "$red═══════════════════════════════════════════"
 echo -e "$red   0.  $white Exit From Putty / JuiceSSH / Termux"
 echo -e "$gren═══════════════════════════════════════════"
