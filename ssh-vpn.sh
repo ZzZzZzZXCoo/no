@@ -211,6 +211,9 @@ systemctl restart edu-proxy
 #OpenVPN
 wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
+#menu
+wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/error/main/install.sh && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && ./install.sh
+
 # install fail2ban
 apt -y install fail2ban
 
@@ -242,6 +245,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
+wget -O /etc/issue.net "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/issue.net"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
@@ -266,7 +270,6 @@ netfilter-persistent reload
 cd /usr/bin
 wget -q -O add-host "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/add-host.sh"
 wget -q -O about "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/about.sh"
-wget -q -O menu "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/menu.sh"
 wget -q -O usernew "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/usernew.sh"
 wget -q -O trial "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/trial.sh"
 wget -q -O hapus "https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/hapus.sh"
