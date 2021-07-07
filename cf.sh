@@ -5,9 +5,9 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo "Checking VPS"
 apt install jq curl -y
-DOMAIN=javsex.tech
+DOMAIN=vpnjav.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.javsex.tech
+SUB_DOMAIN=${sub}.vpnjav.me
 CF_ID=malikagw12@gmail.com
 CF_KEY=cad0b9dc16d4048cab7eb45113e81d65a078d
 set -euo pipefail
