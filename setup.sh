@@ -16,7 +16,7 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/error/main/cf.sh && chmod +x cf.sh && sed -i -e 's/\r$//' cf.sh && ./cf.sh
+wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget -q https://raw.githubusercontent.com/ZzZzZzZXCoo/no/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
