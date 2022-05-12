@@ -5,7 +5,7 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 clear
 if [[ "$IP2" = "" ]]; then
-domain=$(cat /etc/v2ray/domain)
+domain=$(cat /root/domain)
 else
 domain=$IP2
 fi
